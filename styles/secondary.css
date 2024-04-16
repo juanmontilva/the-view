@@ -437,3 +437,37 @@ header{
 .about__right p{
     margin: 0 4rem 1.5rem 0;
 }
+
+
+
+/* ============imagenes o galeria ======== */
+
+
+#gallery{
+    margin-top: 12rem;
+}
+
+
+.gallery__head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery__container p{
+    width: 45rem;
+}
+
+.swiper-wrapper{
+    margin-top: 5rem;
+    height: 37rem;
+    padding-bottom: 5rem;
+}
+
+.swiper-slide{
+    border: 0.5rem solid var(--color-bg-4);
+    height: fit-content;
+    max-height: 36rem;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
