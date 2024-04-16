@@ -375,6 +375,12 @@ header{
 .about__btn{
     color: var(--color-primary-variant);
     align-self: end;
+
+    /* PROBLEMA CORREGIDO */
+
+    display: flex;
+    justify-content: center;
+    /* ================= */
 }
 
 .about__btn:hover{
