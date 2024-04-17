@@ -262,10 +262,12 @@ header{
 
 
 
+
+/* modificaciones de frames ojo para las imagenes */
 .header__frames{
     position: absolute;
     top: 88vh;
-    right: 44rem;
+    right: 47rem;
     transition: var(--transition);
 }
 
