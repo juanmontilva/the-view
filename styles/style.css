@@ -38,11 +38,33 @@ header a{
     position: absolute;
     inset: 0 0 0 0;
 }
+
+
 .carousel .list .item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+/* OJO ESTO SE MODIFICA DE MANERA CORRECTA PARA AGREGAR SOMBRA A LA IMAGEN */
+/* .carousel .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);} Ajusta este valor según lo oscuro que sea la imagen */
+
+    /* .carousel .list .item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(100%); }/* Restablece el filtro a su estado original */
+/*     
+    .carousel .list .item:hover img{
+        filter: brightness(0.5);} /* Aplica el filtro al pasar el mouse */
+
+
+
+
 .carousel .list .item .content{
     position: absolute;
     top: 20%;
