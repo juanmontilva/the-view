@@ -479,3 +479,52 @@ header{
     transition: var(--transition);
 }
 
+
+/* =========inicio de galeria========= */
+
+#exhibitions{
+    margin-top: 10rem;
+}
+
+.exhibitions__container{
+    position: relative;
+}
+
+
+.exhibitions__empty{
+    width: 26rem;
+    position: absolute;
+    right: 14rem;
+    top: 0;
+}
+
+
+
+.exhibitions__head{
+    display: grid;
+    grid-template-columns: auto 10rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exhibitions__head > p{
+    width: 45rem;
+}
+
+
+.exhibitions__btn{
+    color: var(--color-primary-variant);
+    /* OJO PROBLEMA SOLUCIONADO */
+    display: flex;
+    justify-content: center;
+}
+
+.exhibitions__btn:hover{
+    transform: translateY(-1rem);
+}
+
+.exhibitions__gallery{
+    display: grid;
+}
+
+
