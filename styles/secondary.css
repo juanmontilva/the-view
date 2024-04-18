@@ -739,7 +739,6 @@ footer{
         width: 100%;
         top: 0;
         left: 0;
-
     }
 
     .empty{
@@ -787,13 +786,24 @@ footer{
 
 /* OJO AGREGADO DE BORDES, SE NECESITABA===== */
     .about__image-lg{
-
         filter: saturate(1) brightness(1);
         border: 1rem solid var(--color-bg-2);
         border-radius: 2rem 2rem 2rem 2rem;
+        overflow: hidden;
+        width: 100%;
         left: 0;
         top: 0;
     }
+
+    /* .header__image-lg{
+        filter: saturate(1) brightness(1);
+        border: 1rem solid var(--color-bg-2);
+        border-radius: 2rem 2rem 2rem 2rem;
+        overflow: hidden;
+        width: 100%;
+        top: 0;
+        left: 0;
+    } */
 
     .about__image:hover .about__image-lg{
         border: none;
