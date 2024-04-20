@@ -15,6 +15,16 @@
     --color-white: hsl(0,0%,90%);
 
 
+    /* --color-primary: #ff7b02;
+    --color-primary-variant: #e5a55d;
+    --color-bg-1: #000e17;
+    --color-bg-2: #001e2d;
+    --color-bg-3: #01171e;
+    --color-bg-4: #01161e;
+    --color-ligth: #85a2b2;
+    --color-white: hsl(0,0%,90%); */
+
+
     /* color dorado */
     /* --color-primary: #ff7b02;
     --color-primary-variant: #e5a55d;
@@ -43,6 +53,7 @@
     text-decoration: none; 
     box-sizing: border-box;
 }
+
 
 
 ::-webkit-scrollbar{
@@ -463,6 +474,10 @@ header{
 
 .about__right p{
     margin: 0 4rem 1.5rem 0;
+}
+
+.modif{
+    color: var(--color-primary-variant);
 }
 
 
@@ -983,18 +998,52 @@ footer{
         gap: 2rem;
         margin-top: 5rem;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+/* CALENDARIO */
+
+.calendar{
+    margin-top: 4.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+
+.calendar .title__calendar{
+    margin-bottom: 1.5rem;
+}
+
+.calendar p{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.calendar .calendar__complete iframe{
+    display: flex;
+    justify-content: center;
+    /* max-width: 800px; */
+    width: 100%;
+    border-radius: 0.8rem 0.8rem;
+    /* padding: 0 auto; */
+}
+
+.calendar__btn-md{
+    background: linear-gradient(135deg, var(--color-primary-variant), var(--color-primary));
+    color: var(--color-bg-1);
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 0.6rem 3rem;
+    font-weight: 600;
+    border-radius: 0.3rem;
+}
+
+.calendar__btn-md:hover{
+    color: var(--color-bg-1);
+}
+

@@ -99,9 +99,13 @@ header a{
     gap: 5px;
     margin-top: 20px;
 }
+
+
+/* OJO MODIFICACIONES */
 .carousel .list .item .buttons button{
     border: none;
     background-color: #eee;
+    border-radius: 0.5rem;
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
