@@ -590,6 +590,11 @@ header{
 
 footer{
     margin-top: 7rem;
+
+    position: relative;
+    top: 0;
+    background: linear-gradient(var(--color-bg-3),var(--color-bg-1));
+    overflow: hidden;
 }
 
 .footer__container{
@@ -653,9 +658,14 @@ footer{
     }
 
     /* ==========nav========== */
-    .nav__socials{
+    /* .nav__socials{
         display: none;
-    }
+    } */
+
+    /* .nav__socials{
+        justify-content: center;
+        padding-right: 15%;
+    } */
 
     .nav__links{
         position: absolute;
@@ -880,6 +890,12 @@ footer{
         color: var(--color-white);
     }
 
+    /* OJO ARREGLO DE MODIFICACION */
+
+    .nav__socials{
+    justify-content: center;
+    padding-right: 15%;
+    }
 
     header{
         padding: 0;
@@ -998,6 +1014,9 @@ footer{
         gap: 2rem;
         margin-top: 5rem;
     }
+
+
+
 }
 
 
@@ -1041,9 +1060,114 @@ footer{
     padding: 0.6rem 3rem;
     font-weight: 600;
     border-radius: 0.3rem;
+    max-width: 400px;
+    justify-content: center;
 }
 
 .calendar__btn-md:hover{
     color: var(--color-bg-1);
 }
 
+
+
+/* ===========MENU=========== */
+
+
+.menu{
+    margin-top: 8rem;
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px 40px;
+}
+
+.heading{
+    background: linear-gradient(var(--color-bg-1), var(--color-bg-3));
+    color: var(--color-white);
+    margin-bottom: 30px;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.heading > h1{
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.heading > h3{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.food-items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: .2s ease-in-out;
+}
+
+.food-items img{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+}
+
+h1{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.details{
+    padding: 20px 10px;
+    display: grid;
+
+    /* OJO MODIFICACION */
+    /* Esto permite agregar botones */
+    /* OJO PENDIENTE UTILIZAR LOS 50PX EN CASO DE BOTON */
+    /* grid-template-rows: auto 1fr 50px; */
+    grid-template-rows: auto 1fr 0px;
+    grid-row-gap: 15px;
+}
+
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.details-sub > h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.price{
+    text-align: right;
+}
+
+.details > p{
+    color: var(--color-white);
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+}
+
+/* .details > button{
+    background: linear-gradient(var(--color-primary), var(--color-primary-variant));
+    border: none;
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+} */
