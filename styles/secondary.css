@@ -699,6 +699,15 @@ h5{
     cursor: pointer;
 }
 
+.buttons__open{
+    grid-column: auto auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
 .details a{
     color: black;
 }
