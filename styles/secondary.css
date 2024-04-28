@@ -4,7 +4,8 @@
 
 :root{
 
-    /* color plateado */
+
+    /* OJO COLOR PRINCIPAL DE LAS VARIABLES */
     --color-primary: #ff7b02;
     --color-primary-variant: #e5a55d;
     --color-bg-1: #000e17;
@@ -884,6 +885,10 @@ footer{
 
     .nav__links li:nth-child(6){
         animation-delay: 1000ms;
+    }
+
+    .nav__links li:nth-child(7){
+        animation-delay: 1200ms;
     }
 
     @keyframes navAnimation{
