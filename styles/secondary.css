@@ -14,6 +14,10 @@
     --color-bg-4: #003347;
     --color-ligth: #85a2b2;
     --color-white: hsl(0,0%,90%);
+    --black-clear: #1b1b1b;
+    --black-medium: #151515;
+    --black-intense: #000000;
+    --gold-crayola: hsl(38, 61%, 73%);
 
 
     /* --color-primary: #ff7b02;
@@ -81,7 +85,7 @@ html{
 
 body{
     font-family: Poppins;
-    background: var(--color-bg-3) url(../image/imagenes-the-view/asfalt-light.png);
+    background: var(--black-intense) url(../image/imagenes-the-view/asfalt-light.png);
     color: var(--color-ligth);
     line-height: 1.7;
 }
@@ -103,13 +107,13 @@ h2{
 
 
 a{
-    color: var(--color-ligth);
+    color: var(--color-white);
     transition: var(--transition);
 }
 
 
 a:hover{
-    color: var(--color-primary);
+    color: var(--gold-crayola);
 }
 
 .container{
@@ -144,8 +148,8 @@ nav{
 
 /* =======nav usando javascript ojo====== */
 .window-scrolled{
-    background: var(--color-bg-2);
-    border-bottom: 0.2rem solid var(--color-bg-3);
+    background: var(--black-intense);
+    border-bottom: 0.2rem solid var(--gold-crayola);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 }
 
@@ -181,7 +185,7 @@ nav{
     width: 2rem;
     height: 2rem;
 
-    background: linear-gradient(var(--color-primary-variant),var(--color-primary));
+    background: linear-gradient(var(--gold-crayola),var(--color-primary-variant));
     border-radius: 0.5rem;
     color: var(--color-bg-4);
     display: grid;
@@ -194,6 +198,7 @@ nav{
 }
 
 
+/* ---------------------LISTO NAV----------- */
 
 /* =====================header============== */
 
@@ -202,7 +207,7 @@ header{
     height: 100vh;
     position: relative;
     top: 0;
-    background: linear-gradient(var(--color-bg-3),var(--color-bg-1));
+    background: linear-gradient(var(--black-intense),var(--color-bg-1), var(--black-intense));
     overflow: hidden;
 }
 
@@ -216,7 +221,7 @@ header{
 }
 
 .header__image-bg{
-    background: var(--color-bg-4);
+    background: linear-gradient(var(--gold-crayola), var(--black-medium), var(--black-intense));
     height: 22rem;
     width: 16rem;
     position: absolute;
@@ -250,7 +255,7 @@ header{
 
 .header__left:hover .header__image-lg{
     filter: saturate(1) brightness(1);
-    border: 1rem solid var(--color-bg-4);
+    border: 1rem solid var(--color-primary-variant);
     top: 0;
     left: 0;
 }
@@ -265,11 +270,11 @@ header{
 .empty{
     height: 3.5rem;
     width: 18rem;
-    background: var(--color-bg-2);
+    background: var(--black-medium);
     border-radius: calc(3.5rem / 2);
     margin-bottom: 3.5rem;
     box-shadow: inset 0 1rem rgba(0, 0, 0, 0.3);
-    border: 1px solid var(--color-bg-4);
+    border: 1px solid var(--black-intense);
 }
 
 
@@ -305,7 +310,7 @@ header{
 
 .header__frame{
     width: 14rem;
-    border: 0.4rem solid var(--color-bg-3);
+    border: 0.4rem solid var(--color-primary-variant);
     box-shadow: 0 0 4rem rgba(0, 0, 0, 0.5);
     position: absolute;
     transform: rotate(-10deg);
@@ -343,7 +348,7 @@ header{
 }
 
 .header__btn {
-    background: linear-gradient(-30deg, var(--color-primary-variant),var(--color-primary),var(--color-primary-variant));
+    background: linear-gradient(-30deg, var(--color-primary-variant),var(--gold-crayola),var(--color-primary-variant));
     position: absolute;
     right: 6%;
     bottom: -3rem;
@@ -403,6 +408,7 @@ header{
     position: absolute;
     top: -7rem;
     z-index: 1;
+    color: white;
 }
 
 .about__btn{
@@ -418,7 +424,7 @@ header{
 
 .about__btn:hover{
     transform: translateY(-1rem);
-    color: var(--color-primary);
+    color: var(--gold-crayola);
 }
 
 
@@ -431,7 +437,7 @@ header{
     height: 24rem;
     position: absolute;
     bottom: 0;
-    background: var(--color-bg-4);
+    background: linear-gradient(var(--black-intense), var(--black-medium), var(--gold-crayola))
 }
 
 .about__image-lg{
@@ -462,7 +468,7 @@ header{
 .about__image:hover .about__image-lg{
     filter: saturate(1) brightness(1);
     box-shadow: 0 3rem rgba(0, 0, 0, 0.2);
-    border: 1rem solid var(--color-bg-4) ;
+    border: 1rem solid var(--color-primary-variant) ;
     left: 0;
     bottom: 0;
 }
@@ -482,7 +488,7 @@ header{
 }
 
 
-
+/* ------------------MODIF ABOUT LISTO----------- */
 /* ============imagenes o galeria ======== */
 
 
@@ -496,6 +502,10 @@ header{
     justify-content: space-between;
 }
 
+.gallery__title{
+    color: white;
+}
+
 .gallery__container p{
     width: 45rem;
 }
@@ -507,7 +517,7 @@ header{
 }
 
 .swiper-slide{
-    border: 0.5rem solid var(--color-bg-4);
+    border: 0.5rem solid var(--color-primary-variant);
     height: fit-content;
     max-height: 36rem;
     overflow: hidden;
@@ -523,6 +533,10 @@ header{
 
 .exhibitions__container{
     position: relative;
+}
+
+.exhibitions__title{
+    color: white;
 }
 
 
@@ -566,7 +580,7 @@ header{
 }
 
 .exhibitions__gallery article{
-    border: 0.5rem solid var(--color-bg-4);
+    border: 0.5rem solid var(--color-primary-variant);
     transition: var(--transition);
 }
 
@@ -599,7 +613,7 @@ header{
 }
 
 .heading{
-    background: linear-gradient(var(--color-bg-1), var(--color-bg-3));
+    background: linear-gradient(var(--gold-crayola), var(--black-clear) , var(--black-medium),var(--black-intense), var(--black-medium), var(--black-clear), var(--gold-crayola));
     color: var(--color-white);
     margin-bottom: 30px;
     padding: 30px 0;
@@ -633,7 +647,7 @@ header{
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     transition: .2s ease-in-out;
-    background: url(../image/imagenes-the-view/form-pattern.png), linear-gradient(var(--color-ligth), var(--color-bg-3), var(--color-bg-4), var(--color-primary));
+    background: url(../image/imagenes-the-view/form-pattern.png), linear-gradient(var(--color-ligth), var(--color-bg-3),var(--black-clear), var(--black-clear), var(--black-clear), var(--black-medium), var(--black-intense), var(--gold-crayola));
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -690,8 +704,8 @@ h5{
 }
 
 .details button{
-    background: linear-gradient(var(--color-primary), var(--color-primary-variant));
-    border: none;
+    background: linear-gradient(var(--gold-crayola), var(--color-primary-variant));
+    border: solid 1px;
     color: var(--color-bg-1);
     font-size: 16px;
     font-weight: 600;
@@ -713,9 +727,9 @@ h5{
     color: black;
 }
 
-.details >button:hover a{
+/* .details >button:hover a{
     color: var(--color-white);
-}
+} */
 
 
 /* CALENDARIO */
@@ -729,8 +743,10 @@ h5{
     padding: 2rem;
 }
 
+
 .calendar .title__calendar{
     margin-bottom: 1.5rem;
+    color: white;
 }
 
 .calendar p{
@@ -751,7 +767,7 @@ h5{
 }
 
 .calendar__btn-md{
-    background: linear-gradient(135deg, var(--color-primary-variant), var(--color-primary));
+    background: linear-gradient(135deg, var(--gold-crayola), var(--color-primary-variant));
     color: var(--color-bg-1);
     margin-top: 2rem;
     display: inline-block;
@@ -775,12 +791,12 @@ footer{
 
     position: relative;
     top: 0;
-    background: linear-gradient(var(--color-bg-3),var(--color-bg-1));
+    background: linear-gradient(var(--black-intense),var(--color-bg-1), var(--black-intense));
     overflow: hidden;
 }
 
 .footer__container{
-    border-top: 0.5rem solid var(--color-bg-4);
+    border-top: 0.5rem solid var(--gold-crayola);
     padding-top: 5rem;
 }
 
@@ -856,10 +872,12 @@ footer{
         flex-direction: column;
         gap: 0;
         display: none;
+        color: black;
+        font-weight: 450;
     }
 
     .nav__links li{
-        height: 5rem;
+        height: 4rem;
         box-shadow: -3rem 3rem 3rem rgba(0, 0, 0, 0.7);
         animation: navAnimation 600ms ease forwards;
         transform: rotateX(90deg);
@@ -900,14 +918,20 @@ footer{
 
 
     .nav__links li a{
-        background: var(--color-bg-4);
+        background: linear-gradient(var(--gold-crayola), var(--color-primary-variant));
         height: 100%;
         width: 100%;
         display: flex;
         align-items: center;
         padding: 1rem 5rem 1rem 3rem;
-        border-top: 1px solid var(--color-bg-2);
+        border-top: 3.5px solid transparent;
+        color: black;
+        border-radius: 5px 5px;
     }
+
+    /* .nav__links li a:hover{
+        background: silver;
+    } */
 
     .nav__toggle-btn{
         display: inline-block;
@@ -944,7 +968,7 @@ footer{
 
     .header__image-lg{
         filter: saturate(1) brightness(1);
-        border: 1rem solid var(--color-bg-2);
+        border: 0.6rem solid var(--gold-crayola);
         border-radius: 2rem 2rem 2rem 2rem;
         overflow: hidden;
         width: 100%;
@@ -970,7 +994,7 @@ footer{
     }
 
     .header__btn-md{
-        background: linear-gradient(135deg, var(--color-primary-variant), var(--color-primary));
+        background: linear-gradient(135deg, var(--gold-crayola), var(--color-primary-variant));
         color: var(--color-bg-1);
         margin-top: 2rem;
         display: inline-block;
@@ -998,7 +1022,7 @@ footer{
 /* OJO AGREGADO DE BORDES, SE NECESITABA===== */
     .about__image-lg{
         filter: saturate(1) brightness(1);
-        border: 1rem solid var(--color-bg-2);
+        border: 1rem solid var(--gold-crayola);
         border-radius: 2rem 2rem 2rem 2rem;
         overflow: hidden;
         width: 100%;
@@ -1225,7 +1249,4 @@ footer{
         gap: 2rem;
         margin-top: 5rem;
     }
-
-
-
 }
