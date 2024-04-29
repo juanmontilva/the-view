@@ -840,7 +840,7 @@ footer{
 
 /* ======personalizacion movil====== */
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1340px){
     .container{
         width: var(--container-width-md);
         position: relative;
@@ -1010,6 +1010,9 @@ footer{
 
     /* ==========about====== */
 
+    #about{
+        margin-top: 8.5rem;
+    }
     .about__container{
         grid-template-columns: 40% 54%;
         gap: 6%;
